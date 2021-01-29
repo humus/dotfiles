@@ -131,6 +131,7 @@ unset orange
 unset reset
 unset cyan
 
+export GIT_FORMAT="%C(yellow)%h %C(cyan){%p}%C(reset) %C(green)%an%C(reset) %ar %s"
 alias lg='git log -15 --pretty="%C(yellow)%h %C(cyan){%p}%C(reset) %C(green)%an%C(reset) %ar %s" --graph'
 alias lg5='git log -5 --pretty="%C(yellow)%h %C(cyan){%p}%C(reset) %C(green)%an%C(reset) %ar %s" --graph'
 alias uno='git status --short -uno'
@@ -163,3 +164,5 @@ waitport() { port=$1; while ! nc -z localhost $port; do
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/ubuntu/.sdkman"
 [[ -s "/home/ubuntu/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ubuntu/.sdkman/bin/sdkman-init.sh"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

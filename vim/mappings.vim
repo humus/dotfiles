@@ -1,0 +1,1 @@
+/home/ubuntu/dots/dotfiles/config/nvim/mappings.vim
